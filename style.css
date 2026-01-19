@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+  text-align: center;
+
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.container {
+  max-width: 520px;
+  padding: 20px;
+}
+
+
+.cup-logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+
+.main-img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 18px;
+  margin: 20px auto;
+  display: block;
+  border: 3px solid #facc15; 
+}
+
+
+#counter {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 14px 10px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.box span {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+.green {
+  background: #166534;
+}
+
+.yellow {
+  background: #ca8a04;
+}
+
+.red {
+  background: #991b1b;
+}
+
+
+.copyright {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.copyright span {
+  font-weight: 600;
+}

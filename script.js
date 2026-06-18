@@ -1,4 +1,4 @@
-// تاريخ ووقت البداية
+
 const startDate = new Date("2026-01-19T00:56:00");
 
 function countUp() {
